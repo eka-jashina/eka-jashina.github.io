@@ -26,15 +26,10 @@
   }
 
   .hero__title {
-    max-width: 385px;
     margin-bottom: 14px;
     padding-top: 13px;
     font-size: 50px;
     line-height: 50px;
-  }
-
-  .hero__text {
-    max-width: 345px;
   }
 
   .hero__button {
@@ -63,32 +58,32 @@
 
   /* courses */
 
-  .courses__item__content {
+  .course__content {
     min-height: 378px;
   }
 
-  .courses__item_1 .courses__item__time {
+  .course_1 .course__time {
     background-image: url("../img/decor/768/courses-1-768.webp"),
       url("../img/decor/768/courses-1-768.jpg");
   }
 
-  .courses__item_2 .courses__item__time {
+  .course_2 .course__time {
     background-image: url("../img/decor/768/courses-2-768.webp"),
       url("../img/decor/768/courses-2-768.jpg");
   }
 
-  .courses__item_3 .courses__item__time {
+  .course_3 .course__time {
     background-image: url("../img/decor/768/courses-3-768.webp"),
       url("../img/decor/768/courses-3-768.jpg");
   }
 
-  .courses__item_4 .courses__item__time {
+  .course_4 .course__time {
     background-image: url("../img/decor/768/courses-4-768.webp"),
       url("../img/decor/768/courses-4-768.jpg");
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   /* glob */
 
   .container {
@@ -133,49 +128,41 @@
   }
 
   .advantages__content::before {
+    top: 0;
+    width: 150px;
+    height: 134px;
     background-image: url("../img/decor/576/bg-advantages-576.webp"),
       url("../img/decor/576/bg-advantages-576.png");
   }
 
-  .advantages__content::before {
-    top: 0;
-    width: 150px;
-    height: 134px;
-  }
-
-  .advantages__item {
-    padding-top: 0;
-    padding-left: 110px;
-  }
-
   /* courses */
 
-  .courses__item__content {
+  .course__content {
     min-height: 473px;
   }
 
-  .courses__item_1 .courses__item__time {
+  .course_1 .course__time {
     background-image: url("../img/decor/576/courses-1-576.webp"),
       url("../img/decor/576/courses-1-576.jpg");
   }
 
-  .courses__item_2 .courses__item__time {
+  .course_2 .course__time {
     background-image: url("../img/decor/576/courses-2-576.webp"),
       url("../img/decor/576/courses-2-576.jpg");
   }
 
-  .courses__item_3 .courses__item__time {
+  .course_3 .course__time {
     background-image: url("../img/decor/576/courses-3-576.webp"),
       url("../img/decor/576/courses-3-576.jpg");
   }
 
-  .courses__item_4 .courses__item__time {
+  .course_4 .course__time {
     background-image: url("../img/decor/576/courses-4-576.webp"),
       url("../img/decor/576/courses-4-576.jpg");
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   /* glob */
 
   .section {
@@ -208,7 +195,7 @@
     margin-bottom: 25px;
   }
 
-  .header__nav__list {
+  .nav__list {
     gap: 13px;
     font-size: 15px;
   }
@@ -250,28 +237,33 @@
     background-image: none;
   }
 
+  .advantages__item {
+    padding-top: 0;
+    padding-left: 110px;
+  }
+
   /* courses */
 
-  .courses__item__content {
+  .course__content {
     min-height: 473px;
   }
 
-  .courses__item_1 .courses__item__time {
+  .course_1 .course__time {
     background-image: url("../img/decor/320/courses-1-320.webp"),
       url("../img/decor/320/courses-1-320.jpg");
   }
 
-  .courses__item_2 .courses__item__time {
+  .course_2 .course__time {
     background-image: url("../img/decor/320/courses-2-320.webp"),
       url("../img/decor/320/courses-2-320.jpg");
   }
 
-  .courses__item_3 .courses__item__time {
+  .course_3 .course__time {
     background-image: url("../img/decor/320/courses-3-320.webp"),
       url("../img/decor/320/courses-3-320.jpg");
   }
 
-  .courses__item_4 .courses__item__time {
+  .course_4 .course__time {
     background-image: url("../img/decor/320/courses-4-320.webp"),
       url("../img/decor/320/courses-4-320.jpg");
   }
