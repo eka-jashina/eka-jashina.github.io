@@ -37,6 +37,45 @@ function closeOnBackDropClick({ currentTarget, target }) {
   }
 }
 
+/* hero-swiper */
+
+const heroSwiper1 = new Swiper('.hero__bg-left-top', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  effect: 'fade',
+  speed: 1000,
+});
+
+const heroSwiper2 = new Swiper('.hero__bg-right-top', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  effect: 'fade',
+  speed: 1000,
+}); 
+
+const heroSwiper3 = new Swiper('.hero__bg-left-bottom', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  pagination: {
+    el: ".hero-pagination",
+  },
+  navigation: {
+    nextEl: ".hero-button-next",
+    prevEl: ".hero-button-prev",
+  },
+  effect: 'fade',
+  speed: 1000,
+});
+
+const heroSwiper4 = new Swiper('.hero__bg-right-bottom', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  effect: 'fade',
+  speed: 1000,
+});
+
+heroSwiper3.controller.control = [heroSwiper1, heroSwiper2, heroSwiper4];
+
 /* Свайпер новостей */
 
 const newsSwiper = new Swiper(".news__container", {
@@ -134,5 +173,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-galleryTop.controller.control = galleryThumbs;
+// galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
