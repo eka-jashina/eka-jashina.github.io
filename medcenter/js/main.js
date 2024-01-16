@@ -80,7 +80,6 @@ heroSwiper3.controller.control = [heroSwiper1, heroSwiper2, heroSwiper4];
 
 const newsSwiper = new Swiper(".news__container", {
   loop: true,
-  loopedSlides: 5,
   slidesPerView: 3,
   spaceBetween: 3,
   pagination: {
@@ -89,6 +88,14 @@ const newsSwiper = new Swiper(".news__container", {
   navigation: {
     nextEl: ".news-button-next",
     prevEl: ".news-button-prev",
+  },
+  breakpoints: {
+    521: {
+      slidesPerView: 2,
+    },
+    1025: {
+      slidesPerView: 3,
+    }
   },
 });
 
@@ -104,6 +111,14 @@ const reviewsSwiper = new Swiper(".reviews__container", {
   navigation: {
     nextEl: ".reviews-button-next",
     prevEl: ".reviews-button-prev",
+  },
+  breakpoints: {
+    521: {
+      slidesPerView: 2,
+    },
+    1025: {
+      slidesPerView: 3,
+    }
   },
 });
 
@@ -141,6 +156,16 @@ const faqSwiper = new Swiper(".faq__questions", {
     nextEl: ".faq-button-next",
     prevEl: ".faq-button-prev",
   },
+  breakpoints: {
+    521: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    1025: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    }
+  },
 });
 
 /* Галеря */
@@ -173,5 +198,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
